@@ -10,16 +10,16 @@ object Temperature extends App{
   case class Boiling() extends Status()
   case class Neutral() extends Status()
 
-  print("Enter minimun temperature: ")
+  print("Enter freezing threshold: ")
   val minTemp = readLine.toDouble
 
-  print("Enter max temperature: ")
+  print("Enter boiling threshold: ")
   val maxTemp = readLine.toDouble
 
-  print("Enter fluctuation: ")
+  print("Enter fluctuation value: ")
   val fluctiuation = readLine.toDouble
 
-  print("Enter temp values: ")
+  print("Enter temperature values separated with whitespace: ")
   val tempValues = readLine
 
   val resultArray = giveOutput(minTemp, maxTemp, fluctiuation, tempValues)
