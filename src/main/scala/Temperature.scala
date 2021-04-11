@@ -23,7 +23,8 @@ object Temperature extends App{
   val tempValues = readLine
 
   val resultArray = giveOutput(minTemp, maxTemp, fluctiuation, tempValues)
-  resultArray.forEach(x => print(x + " "))
+  val resultString = resultArray.toArray().mkString(" ")
+  println(resultString)
 
 
   def giveOutput(min: Double, max: Double, fluct: Double, values: String): util.ArrayList[String] = {
